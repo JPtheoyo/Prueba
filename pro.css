@@ -1,0 +1,83 @@
+body {
+    padding: 20px;
+    font-family: 'Glacial';
+}
+
+@font-face {
+    font-family: 'Glacial';
+    src: url(GlacialIndifference-Bold.otf);
+}
+
+.view-options {
+    margin-bottom: 20px;
+    font-family: 'Glacial';
+}
+
+.view-options button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    font-family: 'Glacial';
+}
+
+#product-container {
+    display: grid;
+    gap: 15px;
+}
+
+.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.list-view {
+    grid-template-columns: 1fr;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product img {
+    max-width: 100%;
+    height: 50%;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #2f013d;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Glacial';
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}

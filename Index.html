@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciboney Lightings</title>
+    <link rel="stylesheet" href="real.css">
+    <link rel="icon" sizes="192x192" href="C:\Users\asp10\OneDrive\Desktop\Sitio Web Karina\img\Black White Elegant Monogram Initial Name Logo.png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="C:\Users\asp10\OneDrive\Desktop\Sitio Web Karina\img\Black White Elegant Monogram Initial Name Logo.png" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="C:\Users\asp10\OneDrive\Desktop\Sitio Web Karina\img\Black White Elegant Monogram Initial Name Logo.png" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/52bf03534f.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="C:\Users\asp10\OneDrive\Desktop\Sitio Web Karina\Index.html">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Nosotros</a></li>
+            <li><a href="C:\Users\asp10\OneDrive\Desktop\Sitio Web Karina\productos.html">Productos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+        </ul>
+    </nav>
+
+    <!-- El encabezado de Juan Pablo -->
+    <header>
+        <div class="left-section">
+            <h1>Ciboney Lightings</h1>
+            <p>Your Guiding Light.</p>
+            
+        </div>
+        <div class="right-section">
+            <button>Más Información</button> 
+</div>
+    </header>
+
+
+    <section id="sobre-nosotros">
+      <div class="container">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa joven y dinámica, fundada en 2020, apasionada por la iluminación LED.</p>
+        <p>Nuestra mision es brindar a todas las regiones del pais equipos de iluminacion que se adapte a su respectiva necesidad</p>
+    
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Nuestra Visión</h3>
+            <p>Ser líderes en el mercado de la iluminación LED, ofreciendo productos y servicios que superen las expectativas de nuestros clientes y contribuyan a un futuro más sostenible.</p>
+          </div>
+          <div class="col-md-6">
+            <h3>Nuestros Valores</h3>
+            <ul>
+              <li>Responsabilidad</li>
+              <li>Sostenibilidad</li>
+              <li>Originalidad</li>
+              <li>Honestidad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <div class="servicio">
+          <h3>Diseño de Iluminación</h3>
+          <p>Nuestros expertos te ayudarán a crear espacios con la iluminación perfecta para cada ocasión. Desde ambientes cálidos y acogedores hasta diseños modernos y sofisticados.</p>
+      </div>
+      <div class="servicio">
+          <h3>Instalación Profesional</h3>
+          <p>Contamos con un equipo de instaladores altamente capacitados para garantizar una instalación rápida, segura y eficiente de tus luminarias.</p>
+      </div>
+      <div class="servicio">
+      <h3>Mantenimiento y Reparación</h3>
+          <p>Ofrecemos servicios de mantenimiento y reparación para prolongar la vida útil de tus luminarias y garantizar un funcionamiento óptimo.</p>
+      </div>
+      <div class="servicio">
+          <h3>Asesoramiento Personalizado</h3>
+          <p>Te brindaremos asesoramiento personalizado para ayudarte a elegir las luminarias y LED que mejor se adapten a tus necesidades y presupuesto.</p>
+      </div>
+  </section>
+
+
+  <div class="carousel-container">
+    <div class="carousel">
+        <div class="info-box">
+            <div class="icon">🙂</div>
+            <h3>Juan Pérez</h3>
+            <p>"Excelente servicio, volvería sin dudarlo."</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="info-box">
+            <div class="icon">😊</div>
+            <h3>María García</h3>
+            <p>"Muy profesional y atento, lo recomiendo."</p>
+            <div class="stars">⭐⭐⭐⭐</div>
+        </div>
+        <div class="info-box">
+            <div class="icon">😄</div>
+            <h3>Carlos Gómez</h3>
+            <p>"Gran experiencia, superó mis expectativas."</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="info-box">
+            <div class="icon">😎</div>
+            <h3>Ana Rodríguez</h3>
+            <p>"Todo fue perfecto, lo recomendaré a mis amigos."</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+    <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+    <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+</div>
+
+<script>
+  let currentSlide = 0;
+
+  function moveCarousel(direction) {
+      const carousel = document.querySelector('.carousel');
+      const totalSlides = document.querySelectorAll('.info-box').length;
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+</script>
+
+
+
+    <!--Footer de Juan Pablo-->
+    <footer>
+      <div class="row">
+          <div class="col">
+              <img src="img/Black White Elegant Monogram Initial Name Logo.png" class="logo">
+             
+          </div>
+          <div class="col">
+              <h3>Oficina <div class="div-underline"><span></span></div></h3>
+              <p>Avenida John F. Kennedy Km. </p>
+              <p> 7 ½, Campus Universitario UNPHU. </p>
+              <p> Edificio 7</p>
+              <p class="email-id">Js20-0324@gmail.com</p>
+              <h4>809-753-2686</h4>
+          </div>
+  
+          <div class="col">
+              <h3>Enlaces<div class="div-underline"><span></span></div></h3>
+              <ul>
+                  <li><a href="C:\Users\asp10\OneDrive\Desktop\Sitio Web Karina\Index.html">Inicio</a></li>
+                  <li><a href="#sobre-nosotros">Nosotros</a></li>
+                  <li><a href="C:\Users\asp10\OneDrive\Desktop\Sitio Web Karina\productos.html">Productos</a></li>
+                  <li><a href="#servicios">Servicios</a></li>
+              </ul>
+          </div>
+  
+          <div class="col">
+              <h3>Boletin<div class="div-underline"><span></span></div></h3>
+              <form>
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" placeholder="Ingrese su E-mail" required>
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+              <div class="social-icons">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">© 2020-2024 Ciboney Lightings Inc. Todos los derechos reservados. </p>
+  </footer>
+
+
+</body>
+</html>
